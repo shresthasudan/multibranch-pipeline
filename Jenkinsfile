@@ -34,10 +34,10 @@ pipeline {
             steps {
                 echo ">>> Deploying Production Build..."
                 // Example of running a script using the venv
-                sh '''
+                sh """
                     . venv/bin/activate
                     echo "Deploying version for ${env.BRANCH_NAME}"
-                '''
+                """
             }
         }
     }
